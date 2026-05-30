@@ -62,10 +62,24 @@
   }
 
   .bg-base {
-    position: absolute;
+    position: fixed;
     inset: 0;
     overflow: hidden;
     pointer-events: none;
+    z-index: 0;
+  }
+
+  .bg-base iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 177.78vh;
+    height: 100vh;
+    min-width: 100%;
+    min-height: 56.25vw;
+    transform: translate(-50%, -50%);
+    border: none;
+    filter: brightness(0.85) saturate(0.9);
   }
 
   .bg-base iframe {
@@ -338,7 +352,7 @@
 <div class="cursor-ring" id="cursorRing"></div>
 
 <div class="bg">
-  <div class="bg-base"><iframe src="https://player.vimeo.com/video/1196904378?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1&playsinline=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+  <div class="bg-base"><iframe src="https://www.youtube.com/embed/jzjxKH7OsTw?autoplay=1&mute=1&loop=1&playlist=jzjxKH7OsTw&controls=0&playsinline=1&rel=0&showinfo=0&modestbranding=1&iv_load_policy=3" allow="autoplay; fullscreen"></iframe></div>
   <div class="bg-glow"></div>
   <div class="grain"></div>
   <div class="scanlines"></div>
